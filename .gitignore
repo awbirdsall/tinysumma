@@ -1,3 +1,4 @@
 *.un~
 *.swp
 src/tinysumma/__pycache__
+src/tinysumma.egg-info/
