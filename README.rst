@@ -37,7 +37,9 @@ Usage
 	with 17 total clicks.
 	A total of 9 urls were clicked.
 
-Every time that ``tinysumma --updateletter mytinyletter`` is run, it writes three csv files: ``messages.csv``, ``urls.csv`` and ``subscribers.csv`` (default: current directory, unless other path passed in with ``--datadir`` flag). The command overwrites existing files with those names, without requiring confirmation! All summary data reported by other commands are taken from those files. A more in-depth analysis can always be performed outside of ``tinysumma`` by analyzing the contents of those csv files (e.g., with ``pandas.read_csv()``).
+Every time that ``tinysumma --updateletter mytinyletter`` is run, it writes three csv files: ``messages.csv``, ``urls.csv`` and ``subscribers.csv`` (default: current directory, unless other path passed in with ``--datadir`` flag). The command overwrites existing files with those names, without requiring confirmation! All summary data reported by other commands are taken from those files.
+
+The csv files provide a lot more information than what ``tinysumma`` summarizes! A more in-depth analysis can always be performed outside of ``tinysumma`` (e.g., starting with ``pandas.read_csv()``).
 
 Installation
 ------------
