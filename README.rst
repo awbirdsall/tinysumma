@@ -3,7 +3,9 @@ tinysumma 0.1.0: summarize tinyletter statistics
 
 Python package providing a friendly command-line interface to summarize tinyletter email newsletter statistics.
 
-Built on top of [`tinyapi`](https://github.com/jsvine/tinyapi), which wraps around Tinyletter's API, which is publicly accessible but undocumented—so, no guarantees.
+Built on top of `tinyapi`_, which wraps around TinyLetter's API, which is publicly accessible but undocumented—so, no guarantees.
+
+.. _tinyapi: https://github.com/jsvine/tinyapi
 
 Usage
 -----
