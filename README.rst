@@ -35,7 +35,7 @@ Usage
 	with 17 total clicks.
 	A total of 9 urls were clicked.
 
-Every time that ``tinysumma --updateletter mytinyletter`` is run, it writes three csv files containing data on messages, urls and subscribers (default: current directory, unless other path passed in with ``--datadir`` flag). All summary data reported by other commands are taken from those files. A more in-depth analysis can always be performed outside of ``tinysumma`` by analyzing the contents of those csv files (e.g., with ``pandas.read_csv()``).
+Every time that ``tinysumma --updateletter mytinyletter`` is run, it writes three csv files: ``messages.csv``, ``urls.csv`` and ``subscribers.csv`` (default: current directory, unless other path passed in with ``--datadir`` flag). The command overwrites existing files with those names, without requiring confirmation! All summary data reported by other commands are taken from those files. A more in-depth analysis can always be performed outside of ``tinysumma`` by analyzing the contents of those csv files (e.g., with ``pandas.read_csv()``).
 
 Installation
 ------------
@@ -59,15 +59,14 @@ Dependencies
 
 Tested on Python 3.5.
 
-Requires ``tinyapi`` and ``pandas`` (installation of which should be
-automatically handled by ``pip``).
+Requires ``tinyapi`` and ``pandas`` (installation of which should be automatically handled by ``pip``).
 
 Running the tests requires ``pytest``.
 
 Testing
 -------
 
-Tests are located in the ``tests/`` subfolder and can be run using ``pytest``.
+Tests are located in the ``tests/`` subfolder and can be run using ``py.test``.
 
 Development
 -----------
