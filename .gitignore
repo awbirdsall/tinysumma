@@ -4,3 +4,5 @@ src/tinysumma/__pycache__
 src/tinysumma.egg-info/
 tests/__pycache__/
 .cache/
+build/
+dist/
