@@ -28,11 +28,12 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
     ],
-    keywords=['newsletter', 'tinyletter', 'command line'],
+    keywords=['newsletter', 'tinyletter', 'command line', 'cli'],
     package_dir = {'': 'src'},
     packages=['tinysumma'],
     install_requires=['pandas', 'tinyapi'],
     package_data={
+        'tinysumma': ['data/messages.csv', 'data/urls.csv']
     },
     include_package_data=True,
     entry_points={
