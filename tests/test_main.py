@@ -10,7 +10,7 @@ def sampledatadir():
 
 # bare bones tests for no glaring issues: can we load the sample csv files and
 # run the analysis functions without throwing an error, and returning something
-# other than None?
+# other than None? Include non-ascii characters in messages.csv.
 def test_latest_issue(sampledatadir):
     print(sampledatadir)
     latest = ts.latest_issue(sampledatadir)

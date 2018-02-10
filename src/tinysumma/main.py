@@ -56,7 +56,7 @@ def latest_issue(datadir="."):
     m_fn = os.path.join(datadir, "messages.csv")
     # count number of lines in csv to determine number of messages, then just
     # call numbered_issue().
-    with open(m_fn) as f:
+    with open(m_fn, encoding='utf-8') as f:
         totalissues = (sum(1 for _ in f)) - 1 # subtract header line
     latest = numbered_issue(totalissues, datadir=datadir)
     return latest
